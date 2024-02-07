@@ -1,4 +1,5 @@
 class Solution:
+    # Can also use while loop over here
     def isSubsequence(self, s: str, t: str) -> bool:
         i = 0
         for j in range(len(t)):
