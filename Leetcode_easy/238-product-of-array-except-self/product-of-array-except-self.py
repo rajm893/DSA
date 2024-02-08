@@ -7,10 +7,10 @@ class Solution:
 
         for i in range(1,len(nums)):
             prefix_arr[i] = nums[i-1]*prefix_arr[i-1]
-        print(prefix_arr)
+      
         for i in range(len(nums)-2,-1,-1):
             suffix_arr[i] = nums[i+1]*suffix_arr[i+1]
-        print(suffix_arr)
+ 
         for i in range(len(nums)):
             result_arr[i] =  prefix_arr[i] * suffix_arr[i]
         return result_arr
